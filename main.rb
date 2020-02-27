@@ -116,3 +116,33 @@
 # end
 # puts "You have exceeded number of attempts" if attempts == 4
 
+# dial_book = {
+#   "boston" => "617",
+#   "new york" => "212",
+#   "sanfrancisco" => "303",
+#   "miami" => "305",
+#   "orlando" => "450"
+# }
+
+# def get_city_names(dial_book)
+#   dial_book.keys
+# end
+
+# def get_area_code(dial_book, city)
+#   dial_book[city]
+# end
+
+# loop do
+#   puts "Do you want to look up an area code based on the city name?(Y/n)"
+#   response = gets.chomp.downcase
+#   break if response != "y"
+#   puts get_city_names(dial_book) 
+#   puts "Enter the name of the city would you like to look up."
+#   city = gets.chomp
+#   if dial_book.include?(city)    
+#     puts "the area code for #{city} is #{get_area_code(dial_book, city)}"
+#   else
+#     puts "Enter a valid city"
+#     puts get_city_names(dial_book)
+#   end
+# end
