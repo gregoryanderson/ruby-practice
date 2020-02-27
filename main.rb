@@ -60,3 +60,59 @@
 # puts "The first number subtracted from the second number is #{subtract(first_number, second_number)}"
 # else puts "That is not a valid choice"
 # end
+
+
+
+
+
+# sample_hash = {'a' => 1, "b" => 2, "c" => 3}
+# symbol_hash = {a:1, b:2, c:3}
+# p sample_hash['b']
+
+# symbol_hash.each do |key,value|
+# puts "The class for the key is #{key.class} and the class for value is #{value.class}"
+# end
+
+# symbol_hash[:a] = "Greg"
+# p symbol_hash
+
+# symbol_hash.select{ |key, value| symbol_hash.delete(key) if value.is_a?(String)}
+
+# p symbol_hash
+
+# users = [
+#   {username: "Greg", password: "one"},
+#   {username: "Lucy", password: "two"},
+#   {username: "Buttermilk", password: "three"},
+# ]
+
+# def authenticate(new_user, new_pass, list_of_users)
+#   list_of_users.each do |user_record| 
+#     if user_record[:username]==new_user && user_record[:password] == new_pass
+#       return user_record
+#     else 
+#     end
+#   end
+#   "That does not match try again"
+# end
+
+# puts "Welcome to the Authenticator"
+# 25.times {print "-"}
+# puts
+# puts "If you are correct, the user name will be returned"
+# attempts = 1
+
+# while attempts < 4
+#   print "Username: "
+#   new_user = gets.chomp
+#   print "Password: "
+#   new_pass = gets.chomp
+#   authen = authenticate(new_user, new_pass, users)
+#   puts authen
+#   puts "Press q to quit or any other key to continue"
+#   input = gets.chomp.downcase
+#   break if input == "q"
+#   attempts +=1 
+# end
+# puts "You have exceeded number of attempts" if attempts == 4
+
