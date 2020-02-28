@@ -27,5 +27,7 @@ end
 greg = Student.new("Greg", "Anderson", "BabyCakes", "uhoh", "Greg@greg.com")
 lucy = Student.new("lucy", "conk", "conkli", "wooo", "lucy@lucy.com")
 
-greg.
+hashed_digest = greg.create_hash_digest(greg.password)
+
+p hashed_digest
 
